@@ -30,7 +30,7 @@ foreach ($iter as $v) {
 	}
 if ($fichiers) {
     krsort($fichiers);
-	/* On affiche les 5 derniers fichiers que l'on classe en tableau */
+    /* On affiche les 5 derniers fichiers que l'on classe en tableau */
     $last5 = array_slice($fichiers, 0, 5);
     /* var_dump($last5); */
 	/* On commence à afficher la liste des fichiers */
@@ -40,7 +40,8 @@ if ($fichiers) {
 		$nbf++;	// on rajoute +1 à la variable pour obtenir #tabs-1, #tabs-2, #tabs-3...	
 	}
 	echo '</ul>';
-		
+
+    /* On affiche maintenant le contenu de chaque fichier correspondant */
     foreach ($last5 as $fichier) {	
 		echo '<div id="tabs-'.$nbi.'">'; // on peut mettre d'autres balises dans les div, telles que p ou pre.
 		include 'pages/'.$fichier; // on fait un include, il faut donc repréciser le chemin du dossier ici
