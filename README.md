@@ -28,7 +28,7 @@ En fonction de l'usage, il peut être intéressant d'afficher directement des pa
       $nbi++;	// idem, on rajoute +1 à la variable pour obtenir #tabs-1, #tabs-2, #tabs-3...	
     }
 
-Voici un exemple de modification possible sur ce foreach :
+Voici un exemple de modification possible sur ce foreach pour n'afficher que du code :
 
     foreach ($last5 as $fichier) {	
       echo '<div id="tabs-'.$nbi.'"></pre>'; // on rajoute pre.
